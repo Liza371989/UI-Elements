@@ -301,6 +301,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -497,6 +498,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 213099590736535720, guid: 1d0173f883989e14493677c41ae5a073, type: 3}
   m_PrefabInstance: {fileID: 67324157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &76277772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 864538881232866547, guid: a686086459191ea4994078fe68c2bf63, type: 3}
+  m_PrefabInstance: {fileID: 1920537343}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &134379032
 GameObject:
@@ -769,14 +775,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203844586}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -1039,6 +1045,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Mask
   m_ShowMaskGraphic: 0
+--- !u!1 &261003481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2270258410762528488, guid: 2eeca4fa75195b14d9063034a4d2c63f, type: 3}
+  m_PrefabInstance: {fileID: 483516138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &270448240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1538,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1663,6 +1675,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2145,13 +2158,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec6009d88c174de8aaf1f7e651a90db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  carsList: []
-  materialsList: []
-  cubeObj: {fileID: 0}
-  viewsList: []
-  carObj: {fileID: 0}
-  musicLoopList: []
-  audioSpeaker: {fileID: 0}
+  carsList:
+  - {fileID: 1169140851}
+  - {fileID: 76277772}
+  - {fileID: 653246800}
+  - {fileID: 261003481}
+  - {fileID: 963202432}
+  - {fileID: 999677131}
+  materialsList:
+  - {fileID: 2100000, guid: a63e03bbbdc5a4b0d8777e9762b0e83e, type: 2}
+  - {fileID: 2100000, guid: af5a5ab2922aa4cd49dfce5757e40718, type: 2}
+  - {fileID: 2100000, guid: cdb51181052124b1fb6e4ae9422498e6, type: 2}
+  - {fileID: 2100000, guid: 2c509a9c0d6994695ab808d92dded8de, type: 2}
+  cubeObj: {fileID: 681306568}
+  viewsList:
+  - {x: 0, y: 180, z: 0}
+  - {x: 0, y: 90, z: 0}
+  - {x: -90, y: 0, z: 0}
+  carObj: {fileID: 1741740474}
+  musicLoopList:
+  - {fileID: 8300000, guid: 937cceeb84f68d1488e4063203a3b605, type: 3}
+  - {fileID: 8300000, guid: 9a9c299152803c843b0b9ee35114535b, type: 3}
+  - {fileID: 8300000, guid: ac81e521cc4fffd4cb560d4ddc70d306, type: 3}
+  audioSpeaker: {fileID: 1658753555}
+--- !u!1 &653246800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4849416383976443089, guid: 1d0173f883989e14493677c41ae5a073, type: 3}
+  m_PrefabInstance: {fileID: 67324157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &681306568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,6 +2273,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &681306571
 MeshFilter:
@@ -2835,7 +2870,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605205931}
+        m_TargetAssemblyTypeName: DropdownFunctions, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 802689009}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &802689010
 MonoBehaviour:
@@ -3372,6 +3419,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &963202432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2686982419682777703, guid: dc8c2427d4e766843b3b93ad9de149ba, type: 3}
+  m_PrefabInstance: {fileID: 327661642}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &976429357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,6 +3594,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3583,6 +3636,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988383970}
   m_CullTransparentMesh: 1
+--- !u!1 &999677131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1900681226621404113, guid: 7e4d049e6a79539479a2e9e98c071bfe, type: 3}
+  m_PrefabInstance: {fileID: 29288004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078473044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3736,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3755,6 +3814,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!1 &1169140851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2672864514906475514, guid: 22c9c216bad815c41ab718efa15f912b, type: 3}
+  m_PrefabInstance: {fileID: 1553117458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1172366369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3850,6 +3914,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3986,6 +4051,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4375,6 +4441,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4775,6 +4842,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5180,7 +5248,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605205931}
+        m_TargetAssemblyTypeName: DropdownFunctions, Assembly-CSharp
+        m_MethodName: SelectCar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1691830106}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1691830107
 MonoBehaviour:
@@ -6141,7 +6221,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605205931}
+        m_TargetAssemblyTypeName: DropdownFunctions, Assembly-CSharp
+        m_MethodName: SelectView
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2088428952}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &2088428953
 MonoBehaviour:
@@ -6284,7 +6376,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605205931}
+        m_TargetAssemblyTypeName: DropdownFunctions, Assembly-CSharp
+        m_MethodName: SelectMusicLoop
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2137663153}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &2137663154
 MonoBehaviour:

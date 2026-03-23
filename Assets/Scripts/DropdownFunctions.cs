@@ -18,7 +18,7 @@ public class DropdownFunctions : MonoBehaviour
             carsList[i].SetActive(false);
         }
         // Show Car Selection
-        carsList[carMenuValue].SetActive(false);
+        carsList[carMenuValue].SetActive(true);
    }
 
    // List of Materials for Cube Object
@@ -59,5 +59,6 @@ public class DropdownFunctions : MonoBehaviour
         
         // Set Audio Loop
         audioSpeaker.clip = musicLoopList[loopMenuValue];
+		audioSpeaker.Play();
     }
 }

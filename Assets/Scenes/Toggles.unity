@@ -316,9 +316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec648a58bcf3478e9e22e4e9d46f23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  propList: []
-  musicSpeaker: {fileID: 0}
-  narrationSpeaker: {fileID: 0}
+  propList:
+  - {fileID: 128570953}
+  - {fileID: 128570952}
+  - {fileID: 128570951}
+  musicSpeaker: {fileID: 418802150}
+  narrationSpeaker: {fileID: 1864161280}
 --- !u!1 &111000717
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +549,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a58dd32ac24738f4bb2d6b145b5b6f0d, type: 3}
+--- !u!1 &128570951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8020362882975625463, guid: a58dd32ac24738f4bb2d6b145b5b6f0d, type: 3}
+  m_PrefabInstance: {fileID: 128570950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &128570952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6104110391921167422, guid: a58dd32ac24738f4bb2d6b145b5b6f0d, type: 3}
+  m_PrefabInstance: {fileID: 128570950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &128570953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6866334465735801158, guid: a58dd32ac24738f4bb2d6b145b5b6f0d, type: 3}
+  m_PrefabInstance: {fileID: 128570950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &133289046
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,14 +781,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203844586}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -2026,7 +2044,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75844941}
+        m_TargetAssemblyTypeName: ToggleFunctions, Assembly-CSharp
+        m_MethodName: toggleCharacterObject1
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 463258925}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &463427225
 GameObject:
@@ -2415,7 +2445,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75844941}
+        m_TargetAssemblyTypeName: ToggleFunctions, Assembly-CSharp
+        m_MethodName: toggleNarration
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 615589687}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &637621207
 GameObject:
@@ -2501,7 +2543,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75844941}
+        m_TargetAssemblyTypeName: ToggleFunctions, Assembly-CSharp
+        m_MethodName: toggleCharacterObject0
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 637621209}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &656687284
 GameObject:
@@ -2598,6 +2652,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5085,7 +5140,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75844941}
+        m_TargetAssemblyTypeName: ToggleFunctions, Assembly-CSharp
+        m_MethodName: toggleCharacterObject2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1769978705}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1823506988
 GameObject:
@@ -6265,7 +6332,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75844941}
+        m_TargetAssemblyTypeName: ToggleFunctions, Assembly-CSharp
+        m_MethodName: toggleMusic
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2139170581}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -11,7 +11,7 @@ public class ButtonFunctions : MonoBehaviour
         myObj.SetActive(false);
     }
     public void ShowHide(GameObject myObj){
-        myObj.SetActive(!myObj.activeSelf);
+        myObj.SetActive(!myObj.activeSelf); //flip to opposite
     }
 
     // Update and Display Number in text field
@@ -45,5 +45,16 @@ public class ButtonFunctions : MonoBehaviour
         Vector3 currentScale = myObj.transform.localScale;
         myObj.transform.localScale = new Vector3(currentScale.x*0.9f, currentScale.y*0.9f, currentScale.z*0.9f);
     }
+
+    ///Control AudioSource Properties
+	public void PlaySoundFX(AudioSource myAudio){
+		myAudio.Play();	
+	}	
+	public void PlayMusicLoop(AudioSource myMusic){
+		myMusic.Play();
+	}
+	public void StopMusicLoop(AudioSource myMusic){
+		myMusic.Stop();
+	}
 
 }

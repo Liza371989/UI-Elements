@@ -21,13 +21,33 @@ public class ToggleFunctions : MonoBehaviour
     }
 
     public GameObject[] propList;
-    public void toggleCharacterObject(Toggle _myToggle, int _propNumber)
+    public void toggleCharacterObject0(Toggle _myToggle)
     {
         if (_myToggle.isOn)
         {
-            propList[_propNumber].SetActive(true);
+            propList[0].SetActive(true);
         }else{
-            propList[_propNumber].SetActive(false);
+            propList[0].SetActive(false);
+        }
+    }
+	
+	 public void toggleCharacterObject1(Toggle _myToggle)
+    {
+        if (_myToggle.isOn)
+        {
+            propList[1].SetActive(true);
+        }else{
+            propList[1].SetActive(false);
+        }
+    }
+	
+	 public void toggleCharacterObject2(Toggle _myToggle)
+    {
+        if (_myToggle.isOn)
+        {
+            propList[2].SetActive(true);
+        }else{
+            propList[2].SetActive(false);
         }
     }
 
